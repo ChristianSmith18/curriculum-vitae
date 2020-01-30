@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Ubuntu:500|Work+Sans&display=swap');
+
+nav {
+  background-color: transparent !important;
+
+  ul.uk-navbar-nav {
+    margin-right: 8vw;
+
+    li {
+      margin-top: 18px;
+      min-height: 42 !important;
+
+      a {
+        font-family: 'Work Sans', sans-serif !important;
+        font-weight: bold;
+        border-radius: .7rem;
+        margin: 2px;
+        height: 42px;
+        min-height: 0 !important;
+        transition: all ease-in-out .5s;
+        color: white;
+      }
+    }
+
+    li:hover a {
+      -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
+
+      border-radius: .7rem;
+      margin: 2px;
+      height: 42px;
+      background-color: #f0f0f060 !important;
+    }
+  }
+}
+
+.img-bg {
+  position: relative;
+
+  h1 {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  p.subtitle {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  p.buttons {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    button {
+      border-radius: 1.2rem;
+      transition: all ease-in-out .5s;
+      font-weight: bold;
+    }
+
+    button:first-child {
+      margin-right: 10px;
+      background-color: white;
+    }
+
+    button:first-child:hover {
+      background-color: #d8d8d8;
+    }
+  }
+}
+
+.img-profile {
+  position: absolute;
+  border-radius: 50%;
+  top: 26%;
+  left: 50%;
+  min-width: 130px;
+  max-width: 160px;
+  width: 12vw;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+.img-profile:hover {
+  transform: scale(1.1) translate(-46%, -46%);
+  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
+}
+
+.img-wave {
+  position: absolute;
+  width: 100%;
+  bottom: -18px;
+  z-index: 99;
+}
+
+img.img-bridge {
+  margin-top: -80px;
+  filter: blur(1px);
+
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image:after {
+  content: '\A';
+  position: absolute;
+  margin-top: -80px;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.redes-sociales {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+  a {
+    width: 50px !important;
+    height: 50px !important;
+    color: white;
+  }
+
+  a:first-child,
+  a:last-child {
+    margin-bottom: 25px;
+  }
+
+  a[uk-icon="facebook"] {
+    background-color: #3b5998;
+  }
+
+  a[uk-icon="twitter"] {
+    background-color: #1da1f2;
+  }
+
+  a[uk-icon="google-plus"] {
+    background-color: #db4437;
+  }
+
+  a[uk-icon="instagram"] {
+    background-color: #E1306C;
+  }
+}
+
+@media (max-width: 948px) {
+  .img-bg {
+
+    h1 {
+      font-size: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+    }
+
+    p.buttons {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .redes-sociales {
+    width: 100%;
+    text-align: center;
+    top: 86%;
+  }
+}
+
+#reveal-button {
+  margin-top: 5px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 65px;
+  z-index: 9;
+}
+
+@media (max-width: 425px) {
+  .img-wave {
+    display: none;
+  }
+
+  img.img-bridge,
+  .image:after {
+    height: 110vh;
+  }
+
+  #myNavbar {
+    display: none;
+  }
+
+  #reveal-button {
+    display: block;
+  }
+}
