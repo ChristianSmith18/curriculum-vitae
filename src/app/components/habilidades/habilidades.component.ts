@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -6,11 +6,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './habilidades.component.html',
   styleUrls: ['./habilidades.component.scss']
 })
-export class HabilidadesComponent implements OnInit {
+export class HabilidadesComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

@@ -1,16 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
-  // tslint:disable-next-line: component-selector
-  selector: 'header',
+  selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  bgColor = false;
+
+  @HostListener('scroll', [])
+  doSomethingOnInternalScroll() {
+    if (window.scrollY >= 475) {
+      this.bgColor = true;
+    } else {
+      this.bgColor = false;
+    }
+  }
+
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

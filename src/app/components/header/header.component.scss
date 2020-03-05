@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Ubuntu:500|Work+Sans&display=swap');
+.bg-color {
+  background-color: #000000a4 !important;
+}
+
+#myNavbar {
+  z-index: 1000;
+}
 
 nav {
-  background-color: transparent !important;
+  background-color: transparent;
+  transition: background-color ease-in-out .6s;
 
   ul.uk-navbar-nav {
     margin-right: 8vw;
@@ -211,7 +218,8 @@ img.img-bridge {
   z-index: 9;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 566px) {
+
   .img-wave {
     display: none;
   }

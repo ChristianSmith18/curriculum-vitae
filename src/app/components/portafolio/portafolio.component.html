@@ -1,0 +1,42 @@
+<div id="portfolio" class="portfolio-bg">
+  <h2>Mis Trabajos</h2>
+  <div [ngClass]="{'button-bg': desktop}" class="uk-button hvr-bounce-to-bottom" style="margin-right: 20px;"
+    (click)="setButton(true)">
+    <i class="fas fa-desktop"></i>
+  </div>
+  <div [ngClass]="{'button-bg': !desktop}" class="uk-button hvr-bounce-to-bottom" (click)="setButton(false)">
+    <i class="fas fa-mobile-alt"></i>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="bg-portafoilio">
+    <div class="my-desktop">
+      <img src="../../../assets/img/portafolio/desktop.webp" alt="Computador">
+    </div>
+  </div>
+
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+    uk-slider="center: true; autoplay: true; autoplay-interval: 3000; pause-on-hover: false">
+
+    <ul class="uk-slider-items uk-grid">
+      <li>
+        <div class="uk-panel">
+          <img src="../../../assets/img/portafolio/humantouch_page.png" alt="Página web">
+        </div>
+      </li>
+      <li>
+        <div class="uk-panel">
+          <img src="../../../assets/img/portafolio/master_travel_page.png" alt="Página web">
+        </div>
+      </li>
+      <li>
+        <div class="uk-panel">
+          <img src="../../../assets/img/portafolio/master_travel_page.png" alt="Página web">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

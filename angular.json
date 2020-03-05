@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/assets/css/uikit.min.css",
+              "src/assets/css/devices.min.css",
               "src/styles.scss"
             ],
             "scripts": [
