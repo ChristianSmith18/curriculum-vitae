@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'curriculumVitae';
+
+  @HostListener('window:scroll', ['$event'])
+  showUpButton($event) {
+    if (window.scrollY >= 614) {
+      document.getElementById('button-up').style.display = 'inherit';
+    } else {
+      document.getElementById('button-up').style.display = 'none';
+    }
+  }
 }

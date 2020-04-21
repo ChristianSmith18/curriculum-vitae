@@ -1,7 +1,15 @@
-<app-header></app-header>
+<ng-container (window:scroll)="showUpButton($event)">
+  <app-header></app-header>
 
-<card-info></card-info>
+  <card-info></card-info>
 
-<habilidades></habilidades>
+  <habilidades></habilidades>
 
-<portafolio></portafolio>
+  <portafolio></portafolio>
+</ng-container>
+
+<!-- Templates
+https://template.bulkstudio.com/classic/ -->
+<a id="button-up" href="#" class="uk-icon-button uk-animation-scale-up" uk-scroll="duration: 700">
+  <i class="fas fa-chevron-up"></i>
+</a>

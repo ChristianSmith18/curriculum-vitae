@@ -1,42 +1,27 @@
 <div id="portfolio" class="portfolio-bg">
-  <h2>Mis Trabajos</h2>
-  <div [ngClass]="{'button-bg': desktop}" class="uk-button hvr-bounce-to-bottom" style="margin-right: 20px;"
-    (click)="setButton(true)">
-    <i class="fas fa-desktop"></i>
-  </div>
-  <div [ngClass]="{'button-bg': !desktop}" class="uk-button hvr-bounce-to-bottom" (click)="setButton(false)">
-    <i class="fas fa-mobile-alt"></i>
-  </div>
+  <h2>Principales Proyectos</h2>
 
-  <br>
-  <br>
-
-  <div class="bg-portafoilio">
-    <div class="my-desktop">
-      <img src="../../../assets/img/portafolio/desktop.webp" alt="Computador">
+  <div class="uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@xl" uk-grid>
+    <div *ngFor="let page of pages">
+      <div class="grid" style="width: 100%;">
+        <div class="window-controls">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+            <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+              <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+              <circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+              <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+            </g>
+          </svg>
+        </div>
+        <figure class="effect-oscar">
+          <img [src]="'../../../assets/img/portafolio/'+page.url+'.png'" [alt]="page.alt">
+          <figcaption>
+            <h2 [innerHTML]="page.title"></h2>
+            <p>{{ page.description }}</p>
+            <a [href]="page.link">Ver sitio</a>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </div>
-
-  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-    uk-slider="center: true; autoplay: true; autoplay-interval: 3000; pause-on-hover: false">
-
-    <ul class="uk-slider-items uk-grid">
-      <li>
-        <div class="uk-panel">
-          <img src="../../../assets/img/portafolio/humantouch_page.png" alt="Página web">
-        </div>
-      </li>
-      <li>
-        <div class="uk-panel">
-          <img src="../../../assets/img/portafolio/master_travel_page.png" alt="Página web">
-        </div>
-      </li>
-      <li>
-        <div class="uk-panel">
-          <img src="../../../assets/img/portafolio/master_travel_page.png" alt="Página web">
-        </div>
-      </li>
-    </ul>
-  </div>
-
 </div>

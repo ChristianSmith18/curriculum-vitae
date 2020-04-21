@@ -3,7 +3,7 @@
 }
 
 #myNavbar {
-  z-index: 1000;
+  z-index: 10000;
 }
 
 nav {
@@ -39,6 +39,13 @@ nav {
       height: 42px;
       background-color: #f0f0f060 !important;
     }
+  }
+}
+
+ul.uk-nav {
+  li {
+    list-style-type: disc;
+    margin-left: 30px;
   }
 }
 
@@ -144,6 +151,7 @@ img.img-bridge {
   position: absolute;
   top: 90%;
   left: 50%;
+  z-index: 999;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 

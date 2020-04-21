@@ -1,8 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Ubuntu:500|Work+Sans&display=swap');
+* {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);;
   border-radius: 10px;
   background-color: #F5F5F5;
 }
@@ -15,9 +21,78 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
   background-color: #181818;
 }
 
 .uk-tooltip {
   text-align: center;
+}
+
+a#button-up {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  bottom: 30px;
+  right: 30px;
+  background: #cacaca;
+  color: black;
+  width: 50px;
+  height: 50px;
+  animation: intermitente infinite 3s;
+  transition: all ease-in-out;
+
+  i.fa-chevron-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+  }
+}
+
+@keyframes intermitente {
+  0% {
+    opacity: .75;
+  }
+
+  10% {
+    opacity: .8;
+  }
+
+  20% {
+    opacity: .85;
+  }
+
+  30% {
+    opacity: .9;
+  }
+
+  40% {
+    opacity: .95;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: .95;
+  }
+
+  70% {
+    opacity: .9;
+  }
+
+  80% {
+    opacity: .85;
+  }
+
+  90% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: .77;
+  }
 }
