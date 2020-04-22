@@ -3,22 +3,25 @@
     uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card-body; repeat: true">
     <div>
       <div class="uk-card-body" uk-scrollspy-class="uk-animation-slide-top">
-        <h3 class="uk-card-title">Sobre mí...</h3>
-        <p class="text-p-info">Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.</p>
-        <p class="text-p-info">Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI
-          Kit and FontAwesome,
-          this modern and responsive design template is perfect to showcase your portfolio, skills and experience.
-          <a>Learn More.</a></p>
+        <h3 class="uk-card-title">{{ "about-me.description.title" | translate }}</h3>
+        <p class="text-p-info">{{ "about-me.description.first-p" | translate }}</p>
+        <p class="text-p-info">{{ "about-me.description.second-p" | translate }}
       </div>
     </div>
     <div>
       <div class="uk-card-body" uk-scrollspy-class="uk-animation-slide-bottom">
-        <h3 class="uk-card-title">Información básica</h3>
-        <p class="list-p"><b>Correo</b>: <a class="uk-link-muted-fix" href="#">cgr.gonzalezrossier@gmail.com</a></p>
-        <p class="list-p"><b>Edad</b>: 21 años</p>
-        <p class="list-p"><b>Celular</b>: <a class="uk-link-muted-fix" href="#">+56 9 6459 8631</a></p>
-        <p class="list-p"><b>Dirección</b>: <a class="uk-link-muted-fix" href="#">Teresa Vial #1171</a></p>
-        <p class="list-p"><b>Idiomas</b>: Español (Nativo), Inglés (Medio)</p>
+        <h3 class="uk-card-title">{{ "about-me.information.title" | translate }}</h3>
+        <p class="list-p"><b>{{ "about-me.information.email.label" | translate }}</b>: <a class="uk-link-muted-fix"
+            href="mailto:cristian.gonzalez@c3l-lab.com">{{ "about-me.information.email.text" | translate }}</a></p>
+        <p class="list-p"><b>{{ "about-me.information.age.label" | translate }}</b>: {{ edad }}
+          {{ "about-me.information.age.text" | translate }}</p>
+        <p class="list-p"><b>{{ "about-me.information.phone.label" | translate }}</b>: <a class="uk-link-muted-fix"
+            href="#">{{ "about-me.information.phone.text" | translate }}</a></p>
+        <p class="list-p"><b>{{ "about-me.information.location.label" | translate }}</b>: <a class="uk-link-muted-fix"
+            href="https://www.google.com/maps/place/Santiago,+Regi%C3%B3n+Metropolitana/@-33.4724728,-70.9100195,10z/data=!3m1!4b1!4m5!3m4!1s0x9662c5410425af2f:0x8475d53c400f0931!8m2!3d-33.4488897!4d-70.6692655"
+            target="_blank">{{ "about-me.information.location.text" | translate }}</a></p>
+        <p class="list-p"><b>{{ "about-me.information.language.label" | translate }}</b>:
+          {{ "about-me.information.language.text" | translate }}</p>
       </div>
     </div>
   </div>

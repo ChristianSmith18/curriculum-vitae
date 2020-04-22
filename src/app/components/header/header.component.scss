@@ -108,6 +108,7 @@ ul.uk-nav {
   transform: translate(-50%, -50%);
   cursor: pointer;
   transition: all ease-in-out .3s;
+  animation: pulse 1s infinite;
 }
 
 .img-profile:hover {
@@ -115,6 +116,38 @@ ul.uk-nav {
   -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.75);
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 15px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 15px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 15px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
 }
 
 .img-wave {
@@ -174,12 +207,13 @@ img.img-bridge {
     background-color: #1da1f2;
   }
 
-  a[uk-icon="google-plus"] {
-    background-color: #db4437;
+  a[uk-icon="linkedin"] {
+    background-color: #0077b5;
   }
 
   a[uk-icon="instagram"] {
-    background-color: #E1306C;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   }
 }
 
@@ -220,7 +254,7 @@ img.img-bridge {
   color: black;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 65px;
   height: 65px;
   z-index: 9;
@@ -244,4 +278,15 @@ img.img-bridge {
   #reveal-button {
     display: block;
   }
+}
+
+.floating-button {
+  transition: all ease-in .1s;
+}
+
+.floating-button:hover {
+  transform: translate(5%, -5%);
+  -webkit-box-shadow: -10px 10px 9px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 10px 9px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 10px 9px -4px rgba(0, 0, 0, 0.75);
 }

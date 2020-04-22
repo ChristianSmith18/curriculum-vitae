@@ -1,0 +1,96 @@
+{
+  "header": {
+    "index": "Index",
+    "navbar": {
+      "first-li": "About",
+      "second-li": "Skills",
+      "third-li": "Portfolio",
+      "fourth-li": "Experience",
+      "fifth-li": "Contact"
+    },
+    "description": "Full-Stack Web Developer, Mobile Application Developer",
+    "buttons": {
+      "contact": {
+        "first-button": "Contact Me",
+        "second-button": "Download CV"
+      }
+    }
+  },
+  "about-me": {
+    "description": {
+      "title": "About me...",
+      "first-p": "Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.",
+      "second-p": "Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience."
+    },
+    "information": {
+      "title": "Basic information",
+      "email": {
+        "label": "Email",
+        "text": "cristian.gonzalez@c3l-lab.com"
+      },
+      "age": {
+        "label": "Age",
+        "text": "years old"
+      },
+      "phone": {
+        "label": "Phone",
+        "text": "+56 9 6459 8631"
+      },
+      "location": {
+        "label": "Location",
+        "text": "Santiago de Chile"
+      },
+      "language": {
+        "label": "Languages",
+        "text": "Spanish (Native), English (Medium)"
+      }
+    }
+  },
+  "skills": {
+    "title": "Professional Skills",
+    "titles": {
+      "first-th": "WEB DEVELOPMENT",
+      "second-th": "PROGRAMMING LANGUAGES",
+      "third-th": "FRONTEND",
+      "fourth-th": "BACKEND"
+    },
+    "levels": {
+      "tooltip": "Indicates the amount of knowledge of the language or framework",
+      "first-level": "Expert Level",
+      "second-level": "Medium Level",
+      "third-level": "Basic Level"
+    }
+  },
+  "portfolio": {
+    "title": "Main Projects",
+    "description-project": {
+      "first-p": "Redesign and update of a human resources website.",
+      "second-p": "Transfer a business of tourist packages to the web.",
+      "third-p": "Positioning on the web for a volleyball club.",
+      "fourth-p": "Creation of a website for a process automation startup."
+    },
+    "hover-box": "Click to visit website"
+  },
+  "experience": {},
+  "contact": {
+    "title": "Contact",
+    "card": {
+      "title": "Are you interested? Let's talk",
+      "placeholder": {
+        "first": "Enter your name",
+        "second": "Enter your email",
+        "third": "Enter your phone",
+        "fourth": "Enter your message"
+      },
+      "select-options": {
+        "default": "Type of Consultation",
+        "first": "Business",
+        "second": "Independent"
+      },
+      "button": "Send"
+    }
+  },
+  "footer": {
+    "social-networks": "Social networks"
+  }
+}

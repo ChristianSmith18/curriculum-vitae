@@ -1,0 +1,63 @@
+<div id="contact" class="contacto-bg">
+  <h2>{{ "contact.title" | translate }}</h2>
+  <div class="contact-container" uk-parallax="bgy: -100"
+    style="background-image: url(../../../assets/img/contacto/maps.png);">
+    <div class="uk-card uk-card-body uk-card-default">
+      <h2 class="uk-text-center">{{ "contact.card.title" | translate }}</h2>
+      <form class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
+        <div>
+          <div class="uk-margin">
+            <div class="uk-inline">
+              <span class="uk-form-icon" uk-icon="icon: user"></span>
+              <input [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="uk-input uk-form-width-large"
+                type="text" placeholder="{{ 'contact.card.placeholder.first' | translate }}" tabindex="1">
+            </div>
+          </div>
+
+          <div class="uk-margin">
+            <div class="uk-inline">
+              <span class="uk-form-icon" uk-icon="icon: mail"></span>
+              <input [(ngModel)]="mail" [ngModelOptions]="{standalone: true}" class="uk-input uk-form-width-large"
+                type="email" placeholder="{{ 'contact.card.placeholder.second' | translate }}" tabindex="2">
+            </div>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-inline">
+              <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+              <input [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" class="uk-input uk-form-width-large"
+                type="text" placeholder="{{ 'contact.card.placeholder.first' | translate }}" tabindex="3" maxlength="15">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="uk-margin">
+            <select id="select" class="uk-select" tabindex="4">
+              <option disabled>{{ "contact.card.select-options.default" | translate }}</option>
+              <option>{{ "contact.card.select-options.first" | translate }}</option>
+              <option>{{ "contact.card.select-options.second" | translate }}</option>
+            </select>
+          </div>
+          <div class="uk-margin">
+            <textarea [(ngModel)]="msg" [ngModelOptions]="{standalone: true}" class="uk-textarea"
+              placeholder="{{ 'contact.card.placeholder.fourth' | translate }}" tabindex="5" style="resize: none; height: 100px;"></textarea>
+          </div>
+        </div>
+      </form>
+      <button id="button-submit" class="uk-button uk-button-secondary" style="margin-top: 20px;" (click)="sendData()">
+        <span *ngIf="!loadingSvg">{{ "contact.card.button" | translate }}</span>
+        <span *ngIf="loadingSvg">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin: auto; background: rgba(241, 242, 243, 0); display: block;" width="40px" height="40px"
+            viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle cx="50" cy="50" fill="none" stroke="#ffffff" stroke-width="5" r="35"
+              stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(191.036 50 50)">
+              <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite"
+                dur="0.7575757575757576s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+            </circle>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

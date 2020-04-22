@@ -2,7 +2,7 @@
   <h2>Principales Proyectos</h2>
 
   <div class="uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@xl" uk-grid>
-    <div *ngFor="let page of pages">
+    <div>
       <div class="grid" style="width: 100%;">
         <div class="window-controls">
           <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
@@ -14,11 +14,77 @@
           </svg>
         </div>
         <figure class="effect-oscar">
-          <img [src]="'../../../assets/img/portafolio/'+page.url+'.png'" [alt]="page.alt">
+          <img src="../../../assets/img/portafolio/c3l_page.png" alt="Página de c3l-lab">
           <figcaption>
-            <h2 [innerHTML]="page.title"></h2>
-            <p>{{ page.description }}</p>
-            <a [href]="page.link">Ver sitio</a>
+            <h2>C3L - LAB</h2>
+            <p>{{ "portfolio.description-project.fourth-p" | translate }}</p>
+            <a href="https://c3l-lab.cl/" target="_blank" attr.uk-tooltip="{{ 'portfolio.hover-box' | translate }}"></a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div>
+      <div class="grid" style="width: 100%;">
+        <div class="window-controls">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+            <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+              <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+              <circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+              <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+            </g>
+          </svg>
+        </div>
+        <figure class="effect-oscar">
+          <img src="../../../assets/img/portafolio/club_alianza_stgo_page.png" alt="Página de Club Alianza Santiago">
+          <figcaption>
+            <h2>Club Alianza Santiago</h2>
+            <p>{{ "portfolio.description-project.third-p" | translate }}</p>
+            <a href="https://clubalianzastgo.web.app/" target="_blank" attr.uk-tooltip="{{ 'portfolio.hover-box' | translate }}"></a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div>
+      <div class="grid" style="width: 100%;">
+        <div class="window-controls">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+            <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+              <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+              <circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+              <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+            </g>
+          </svg>
+        </div>
+        <figure class="effect-oscar">
+          <img src="../../../assets/img/portafolio/master_travel_page.png" alt="Página de Master Travel">
+          <figcaption>
+            <h2>Master Travel</h2>
+            <p>{{ "portfolio.description-project.second-p" | translate }}</p>
+            <a href="https://mastertravelpage.web.app/" target="_blank" attr.uk-tooltip="{{ 'portfolio.hover-box' | translate }}"></a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div>
+      <div class="grid" style="width: 100%;">
+        <div class="window-controls">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+            <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+              <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+              <circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+              <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+            </g>
+          </svg>
+        </div>
+        <figure class="effect-oscar">
+          <img src="../../../assets/img/portafolio/humantouch_page.png" alt="Página de HumanTouch">
+          <figcaption>
+            <h2>HumanTouch</h2>
+            <p>{{ "portfolio.description-project.first-p" | translate }}</p>
+            <a href="https://humantouch.cl/" target="_blank" attr.uk-tooltip="{{ 'portfolio.hover-box' | translate }}"></a>
           </figcaption>
         </figure>
       </div>

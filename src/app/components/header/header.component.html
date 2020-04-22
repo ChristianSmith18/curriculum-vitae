@@ -4,11 +4,15 @@
     <div class="uk-navbar-right">
 
       <ul class="uk-navbar-nav">
-        <li><a href="#about" uk-scroll="duration: 500; offset: 80">Acerca de mí</a></li>
-        <li><a href="#skills" uk-scroll="duration: 500; offset: 80">Habilidades</a></li>
-        <li><a href="#portfolio" uk-scroll="duration: 500; offset: 80">Portafolio</a></li>
-        <li><a href="#">Experiencia</a></li>
-        <li><a href="#">Contácto</a></li>
+        <li><a href="#about" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.first-li" | translate }}</a></li>
+        <li><a href="#skills" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.second-li" | translate }}</a></li>
+        <li><a href="#portfolio" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.third-li" | translate }}</a>
+        </li>
+        <li><a href="#">{{ "header.navbar.fourth-li" | translate }}</a></li>
+        <li><a href="#contact" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.fifth-li" | translate }}</a>
+        </li>
+        <li><a (click)="setLang()"><img [src]="'../../../assets/img/flags/'+lang+'.svg'" alt="Bandera" width="30"></a>
+        </li>
       </ul>
 
     </div>
@@ -27,15 +31,17 @@
 
     <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-    <h3>Indice</h3>
+    <h3>{{ "header.index" | translate }}</h3>
 
     <div class="uk-width-1-2@s uk-width-2-5@m">
       <ul class="uk-nav uk-nav-default">
-        <li><a href="#about" uk-scroll="duration: 500; offset: 80">Acerca de mí</a></li>
-        <li><a href="#skills" uk-scroll="duration: 500; offset: 80">Habilidades</a></li>
-        <li><a href="#portfolio" uk-scroll="duration: 500; offset: 80">Portafolio</a></li>
-        <li><a href="#">Experiencia</a></li>
-        <li><a href="#">Contácto</a></li>
+        <li><a href="#about" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.first-li" | translate }}</a></li>
+        <li><a href="#skills" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.second-li" | translate }}</a></li>
+        <li><a href="#portfolio" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.third-li" | translate }}</a>
+        </li>
+        <li><a href="#">{{ "header.navbar.fourth-li" | translate }}</a></li>
+        <li><a href="#contact" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.fifth-li" | translate }}</a>
+        </li>
       </ul>
     </div>
 
@@ -50,18 +56,20 @@
   <a href="#about" uk-scroll="duration: 300; offset: 80"><img class="img-profile spin circle"
       src="../../../assets/img/header/profile-min.jpg" alt=""></a>
   <h1>Cristian González</h1>
-  <p class="subtitle">Desarrolador Web FullStack, Desarrolador Aplicaciones Móviles</p>
+  <p class="subtitle">{{ "header.description" | translate }}</p>
 
   <p class="buttons" uk-margin>
-    <button class="uk-button uk-button-default">Contáctame</button>
-    <button class="uk-button uk-button-secondary">Descargar CV</button>
+    <button
+      class="uk-button uk-button-default floating-button">{{ "header.buttons.contact.first-button" | translate }}</button>
+    <button
+      class="uk-button uk-button-secondary floating-button">{{ "header.buttons.contact.second-button" | translate }}</button>
   </p>
 
   <div class="redes-sociales">
     <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-    <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+    <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
   </div>
 </div>
 

@@ -1,0 +1,96 @@
+{
+  "header": {
+    "index": "Indice",
+    "navbar": {
+      "first-li": "Acerca de mí",
+      "second-li": "Habilidades",
+      "third-li": "Portafolio",
+      "fourth-li": "Experiencia",
+      "fifth-li": "Contácto"
+    },
+    "description": "Desarrolador Web FullStack, Desarrolador Aplicaciones Móviles",
+    "buttons": {
+      "contact": {
+        "first-button": "Contáctame",
+        "second-button": "Descargar CV"
+      }
+    }
+  },
+  "about-me": {
+    "description": {
+      "title": "Sobre mí...",
+      "first-p": "Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.",
+      "second-p": "Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience."
+    },
+    "information": {
+      "title": "Información básica",
+      "email": {
+        "label": "Correo",
+        "text": "cristian.gonzalez@c3l-lab.com"
+      },
+      "age": {
+        "label": "Edad",
+        "text": "años"
+      },
+      "phone": {
+        "label": "Celular",
+        "text": "+56 9 6459 8631"
+      },
+      "location": {
+        "label": "Ubicación",
+        "text": "Santiago de Chile"
+      },
+      "language": {
+        "label": "Idiomas",
+        "text": "Español (Nativo), Inglés (Medio)"
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades Profesionales",
+    "titles": {
+      "first-th": "DESARROLLO WEB",
+      "second-th": "LENGUAJES DE PROGRAMACIÓN",
+      "third-th": "FRONTEND",
+      "fourth-th": "BACKEND"
+    },
+    "levels": {
+      "tooltip": "Indica la cantidad de conocimiento del lenguaje o framework",
+      "first-level": "Nivel Experto",
+      "second-level": "Nivel Medio",
+      "third-level": "Nivel Básico"
+    }
+  },
+  "portfolio": {
+    "title": "Principales Proyectos",
+    "description-project": {
+      "first-p": "Rediseño y actualización de una página web de recursos humanos.",
+      "second-p": "Trasladar un negocio de paquetes turísticos a la web.",
+      "third-p": "Posicionamiento en la web para un club de voleibol.",
+      "fourth-p": "Creación de sitio web para startup de automatización de procesos."
+    },
+    "hover-box": "Haz click para visitar sitio web"
+  },
+  "experience": {},
+  "contact": {
+    "title": "Contácto",
+    "card": {
+      "title": "¿Estás interesado? Hablemos",
+      "placeholder": {
+        "first": "Ingresa tu nombre",
+        "second": "Ingresa tu correo",
+        "third": "Ingresa tu número de contacto",
+        "fourth": "Escriba su mensaje"
+      },
+      "select-options": {
+        "default": "Tipo de Consulta",
+        "first": "Empresa",
+        "second": "Independiente"
+      },
+      "button": "Enviar"
+    }
+  },
+  "footer": {
+    "social-networks": "Redes Sociales"
+  }
+}

@@ -1,0 +1,64 @@
+* {
+  background-color: #ebebeb;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+[uk-icon="facebook"]:hover {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+[uk-icon="instagram"]:hover {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #fff;
+}
+
+[uk-icon="twitter"]:hover {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+[uk-icon="linkedin"]:hover {
+  background-color: #2977c9;
+  color: #fff;
+}
+
+.dev-section {
+  background-color: #ebebeb !important;
+  font-family: 'Lobster Two', cursive !important;
+  font-style: italic;
+  font-size: 1.3rem;
+
+  span.author {
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+  }
+
+  span.author:hover {
+    color: #56959E;
+    font-size: 1.4rem;
+  }
+}
+
+.second-column {
+  margin-top: 25px;
+}
+
+.third-column {
+  margin-bottom: 0;
+}
+
+@media (max-width: 420px) {
+  .second-column {
+    margin-top: 0px;
+  }
+
+  .third-column {
+    margin-bottom: 20px;
+  }
+}

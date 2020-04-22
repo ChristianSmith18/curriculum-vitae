@@ -1,5 +1,5 @@
 <div id="skills" class="habilidades-bg">
-  <h2>Habilidades Profesionales</h2>
+  <h2>{{ "skills.title" | translate}}</h2>
   <div id="about" class="bg-info uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid
     uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card-body; repeat: true">
     <div>
@@ -9,10 +9,10 @@
           uk-scrollspy="cls: uk-animation-slide-bottom; target: .myRows; repeat: true">
           <thead>
             <tr class="myRows" uk-scrollspy-class="uk-animation-slide-top-medium">
-              <th class="uk-text-center">Desarrollo Web</th>
-              <th class="uk-text-center">Lenguajes de Programación</th>
-              <th class="uk-text-center">Frontend</th>
-              <th class="uk-text-center">Backend</th>
+              <th class="uk-text-center">{{ "skills.titles.first-th" | translate}}</th>
+              <th class="uk-text-center">{{ "skills.titles.second-th" | translate}}</th>
+              <th class="uk-text-center">{{ "skills.titles.third-th" | translate}}</th>
+              <th class="uk-text-center">{{ "skills.titles.fourth-th" | translate}}</th>
             </tr>
           </thead>
           <tbody>
@@ -134,7 +134,7 @@
           uk-scrollspy="cls: uk-animation-slide-bottom; target: .myRows; repeat: true">
           <thead>
             <tr class="myRows" uk-scrollspy-class="uk-animation-slide-top-medium">
-              <th class="uk-text-center">Desarrollo Web</th>
+              <th class="uk-text-center">{{ "skills.titles.first-th" | translate}}</th>
             </tr>
           </thead>
           <tbody>
@@ -181,7 +181,7 @@
           uk-scrollspy="cls: uk-animation-slide-bottom; target: .myRows; repeat: true">
           <thead>
             <tr class="myRows" uk-scrollspy-class="uk-animation-slide-top-medium">
-              <th class="uk-text-center">Lenguajes de Programación</th>
+              <th class="uk-text-center">{{ "skills.titles.second-th" | translate}}</th>
             </tr>
           </thead>
           <tbody>
@@ -228,7 +228,7 @@
           uk-scrollspy="cls: uk-animation-slide-bottom; target: .myRows; repeat: true">
           <thead>
             <tr class="myRows" uk-scrollspy-class="uk-animation-slide-top-medium">
-              <th class="uk-text-center">Frontend</th>
+              <th class="uk-text-center">{{ "skills.titles.third-th" | translate}}</th>
             </tr>
           </thead>
           <tbody>
@@ -283,7 +283,7 @@
           uk-scrollspy="cls: uk-animation-slide-bottom; target: .myRows; repeat: true">
           <thead>
             <tr class="myRows" uk-scrollspy-class="uk-animation-slide-top-medium">
-              <th class="uk-text-center">Backend</th>
+              <th class="uk-text-center">{{ "skills.titles.fourth-th" | translate}}</th>
             </tr>
           </thead>
           <tbody>
@@ -324,19 +324,15 @@
 
     </div>
     <div id="niveles" class="uk-grid-collapse uk-child-width-1-3@s" uk-grid
-      uk-scrollspy="cls: uk-animation-slide-bottom; target: .sub-niveles; repeat: true"
-      uk-tooltip="title: Indica la cantidad de conocimiento del lenguaje o framework">
+      uk-scrollspy="cls: uk-animation-slide-bottom; target: .sub-niveles; repeat: true" attr.uk-tooltip="{{ 'skills.levels.tooltip' | translate }}">
       <div class="sub-niveles" uk-scrollspy-class="uk-animation-scale-up">
-        <p class="green"><i class="green far fa-check-circle"></i> Nivel
-          Experto</p>
+        <p class="green"><i class="green far fa-check-circle"></i> {{ "skills.levels.first-level" | translate }}</p>
       </div>
       <div class="sub-niveles" uk-scrollspy-class="uk-animation-scale-up">
-        <p class="yellow"><i class="yellow far fa-check-circle"></i>
-          Nivel Medio</p>
+        <p class="yellow"><i class="yellow far fa-check-circle"></i> {{ "skills.levels.second-level" | translate }}</p>
       </div>
       <div class="sub-niveles" uk-scrollspy-class="uk-animation-scale-up">
-        <p class="red"><i class="red far fa-check-circle"></i> Nivel
-          Básico</p>
+        <p class="red"><i class="red far fa-check-circle"></i> {{ "skills.levels.third-level" | translate }}</p>
       </div>
     </div>
   </div>
