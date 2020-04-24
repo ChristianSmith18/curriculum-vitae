@@ -79,13 +79,14 @@ ul.uk-nav {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 
-    button {
+    button,
+    a {
       border-radius: 1.2rem;
       transition: all ease-in-out .5s;
       font-weight: bold;
     }
 
-    button:first-child {
+    a {
       margin-right: 10px;
       background-color: white;
     }
@@ -201,21 +202,42 @@ img.img-bridge {
 
   a[uk-icon="facebook"] {
     background-color: #3b5998;
+    transition: opacity ease-in-out .2s;
   }
 
   a[uk-icon="twitter"] {
     background-color: #1da1f2;
+    transition: opacity ease-in-out .2s;
   }
 
   a[uk-icon="linkedin"] {
     background-color: #0077b5;
+    transition: opacity ease-in-out .2s;
   }
 
   a[uk-icon="instagram"] {
     background: #d6249f;
+    transition: opacity ease-in-out .2s;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   }
 }
+
+a[uk-icon="facebook"]:hover {
+  opacity: .8;
+}
+
+a[uk-icon="twitter"]:hover {
+  opacity: .8;
+}
+
+a[uk-icon="linkedin"]:hover {
+  opacity: .8;
+}
+
+a[uk-icon="instagram"]:hover {
+  opacity: .8;
+}
+
 
 @media (max-width: 948px) {
   .img-bg {
@@ -258,6 +280,7 @@ img.img-bridge {
   width: 65px;
   height: 65px;
   z-index: 9;
+  transform: scale(.8);
 }
 
 @media (max-width: 566px) {
@@ -289,4 +312,13 @@ img.img-bridge {
   -webkit-box-shadow: -10px 10px 9px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -10px 10px 9px -4px rgba(0, 0, 0, 0.75);
   box-shadow: -10px 10px 9px -4px rgba(0, 0, 0, 0.75);
+}
+
+span.lang-option {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
 }

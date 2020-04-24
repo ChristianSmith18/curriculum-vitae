@@ -14,13 +14,15 @@
         "first-button": "Contáctame",
         "second-button": "Descargar CV"
       }
-    }
+    },
+    "lang": "Cambiar idioma"
   },
   "about-me": {
     "description": {
       "title": "Sobre mí...",
-      "first-p": "Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.",
-      "second-p": "Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience."
+      "first-p": "Hola! Mi nombre es Cristian González. Soy Desarrollador Web FullStack, Desarrollador de Aplicaciones Móviles y experimentado en posicionamiento SEO.",
+      "second-p": "Tengo más de 3 años de experiencia dando soluciones innovadoras y prácticas a las empresas...",
+      "show-more": "Leer más."
     },
     "information": {
       "title": "Información básica",
@@ -71,7 +73,33 @@
     },
     "hover-box": "Haz click para visitar sitio web"
   },
-  "experience": {},
+  "experience": {
+    "title": {
+      "first": "Experiencia Laboral",
+      "second": "Estudios"
+    },
+    "ul": {
+      "actually": "ACTUALMENTE",
+      "first": {
+        "li1": {
+          "title": "DESARROLLADOR FULL STACK",
+          "text": "Pieza fundamental del desarrollo de un software de recolección y automatización de datos en una empresa startup."
+        },
+        "li2": {
+          "title": "DESARROLLO FRONTEND",
+          "text": "Diseñador y desarrollador de un sitio web de recursos humanos para una empresa del rubro."
+        },
+        "li3": {
+          "title": "COOPERADOR EN GRUPO DE INVESTIGACIÓN",
+          "text": "Encargado del desarrollo a nivel de software para los protipos de un sismógrafo de bajo costo en la universidad."
+        }
+      },
+      "second": {
+        "li1.text": "Ingeniería Civil en Computación e Informática.",
+        "li2.text": "Enseñanza básica y media completa."
+      }
+    }
+  },
   "contact": {
     "title": "Contácto",
     "card": {

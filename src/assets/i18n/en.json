@@ -14,13 +14,15 @@
         "first-button": "Contact Me",
         "second-button": "Download CV"
       }
-    }
+    },
+    "lang": "Set language"
   },
   "about-me": {
     "description": {
       "title": "About me...",
-      "first-p": "Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.",
-      "second-p": "Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience."
+      "first-p": "Hello! My name is Cristian González. I am a FullStack Web Developer, Mobile Application Developer and experienced in SEO positioning.",
+      "second-p": "I have more than 3 years of experience giving innovative and practical solutions to companies...",
+      "show-more": "Show more."
     },
     "information": {
       "title": "Basic information",
@@ -71,7 +73,33 @@
     },
     "hover-box": "Click to visit website"
   },
-  "experience": {},
+  "experience": {
+    "title": {
+      "first": "Work Experience",
+      "second": "Education"
+    },
+    "ul": {
+      "actually": "PRESENT",
+      "first": {
+        "li1": {
+          "title": "FULL STACK DEVELOPER",
+          "text": "Fundamental piece of the development of data collection and automation software in a startup company."
+        },
+        "li2": {
+          "title": "FRONTEND DEVELOPMENT",
+          "text": "Designer and developer of a human resources website for a company in the business."
+        },
+        "li3": {
+          "title": "COOPERATOR IN A RESEARCH GROUP",
+          "text": "Responsible for software-level development for low-cost seismograph prototypes at university."
+        }
+      },
+      "second": {
+        "li1.text": "Civil Engineering in Computing and Informatics.",
+        "li2.text": "Complete primary and secondary education."
+      }
+    }
+  },
   "contact": {
     "title": "Contact",
     "card": {

@@ -5,7 +5,9 @@
       <div class="uk-card-body" uk-scrollspy-class="uk-animation-slide-top">
         <h3 class="uk-card-title">{{ "about-me.description.title" | translate }}</h3>
         <p class="text-p-info">{{ "about-me.description.first-p" | translate }}</p>
-        <p class="text-p-info">{{ "about-me.description.second-p" | translate }}
+        <p class="text-p-info">{{ "about-me.description.second-p" | translate }} <a (click)="downloadPDF()">
+            {{ "about-me.description.show-more" | translate }}
+          </a></p>
       </div>
     </div>
     <div>
@@ -20,7 +22,7 @@
         <p class="list-p"><b>{{ "about-me.information.location.label" | translate }}</b>: <a class="uk-link-muted-fix"
             href="https://www.google.com/maps/place/Santiago,+Regi%C3%B3n+Metropolitana/@-33.4724728,-70.9100195,10z/data=!3m1!4b1!4m5!3m4!1s0x9662c5410425af2f:0x8475d53c400f0931!8m2!3d-33.4488897!4d-70.6692655"
             target="_blank">{{ "about-me.information.location.text" | translate }}</a></p>
-        <p class="list-p"><b>{{ "about-me.information.language.label" | translate }}</b>:
+        <p class="list-p" style="line-height: 1.2;"><b>{{ "about-me.information.language.label" | translate }}</b>:
           {{ "about-me.information.language.text" | translate }}</p>
       </div>
     </div>

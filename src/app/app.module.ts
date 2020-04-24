@@ -15,6 +15,7 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ContactService } from './services/contact.service';
 import { FooterComponent } from './components/footer/footer.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     PortafolioComponent,
     ContactoComponent,
     FooterComponent,
+    ExperienciaComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,35 @@
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="4 5 259 383">
+  <g data-item-type="text" data-item="Business" id="logo__item--business" class="logo__item">
+    <g class="logo__item__inner" transform="translate(5.993927001953125 329.50068785156594) scale(2.3721086357927845 2.3721086357927845) rotate(0 0 0)">
+      <text data-part-id="logo__item--business" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Lobster" font-size="32px" fill="#2c3e51" letter-spacing="1" font-weight="normal" font-style="normal" data-font-family="Lobster" data-font-weight="normal" data-font-style="normal" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf" data-font-filename="lobster-normal-normal">Cristian</text>
+    </g>
+  </g>
+  <g data-item-type="text" data-item="Tagline" id="logo__item--tagline_1" class="logo__item" data-item-clone="true">
+    <g class="logo__item__inner" transform="translate(104.99392700195312 171.50068785156594) scale(3.2289419141131397 3.2289419141131397) rotate(0 0 0)">
+      <text data-part-id="logo__item--tagline_1__0" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Lobster" font-size="32px" fill="#2c3e51" letter-spacing="1" font-weight="normal" font-style="normal" data-font-family="Lobster" data-font-weight="normal" data-font-style="normal" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf" data-font-filename="lobster-normal-normal">C</text>
+    </g>
+  </g>
+  <g data-item-type="text" data-item="Tagline" id="logo__item--tagline_2" class="logo__item" data-item-clone="true">
+    <g class="logo__item__inner" transform="translate(41.993927001953125 373.50068785156594) scale(1.4567145500603393 1.4567145500603393) rotate(0 0 0)">
+      <text data-part-id="logo__item--tagline_2__0" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Lobster" font-size="32px" fill="#4078bc" letter-spacing="1" font-weight="normal" font-style="normal" data-font-family="Lobster" data-font-weight="normal" data-font-style="normal" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf" data-font-filename="lobster-normal-normal">Developer</text>
+    </g>
+  </g>
+  <g data-item-type="image" data-item="Image" data-logo-item="" id="logo__item--logo_0" class="logo__item">
+    <g class="logo__item__inner" transform="translate(-0.7727618705409895 -1) scale(0.17927759495748485 0.17927759495748485) rotate(0 0 0)">
+
+      <g>
+        <linearGradient id="logo__item--logo_0__0" gradientUnits="objectBoundingBox" x1="0.5" y1="0" x2="0.5" y2="1">
+          <stop offset="0" style="stop-color:#333333"></stop>
+          <stop offset="1" style="stop-color:#999999"></stop>
+        </linearGradient>
+        <path fill="#48aadf" d="M1167.3,731.9l277.4,0c-15.2-375.1-315-674.8-684.2-678.8v283.5C976.7,340.5,1152.6,513.5,1167.3,731.9z" data-part-id="logo__item--logo_0__1"></path>
+        <path fill="#2d3e51" d="M1445.3,754.2l-277,0c0,2.5,0.2,4.9,0.2,7.4c0,232.3-182,420.9-408,425v283.5c379-4.1,685-319.7,685-708.5   C1445.5,759.2,1445.3,756.7,1445.3,754.2z" data-part-id="logo__item--logo_0__2"></path>
+        <path fill="#f3bc18" d="M61.3,731.9h277.4C353.3,516,525.3,344.5,738.1,336.8V53.3C372.3,61.3,76.4,359.4,61.3,731.9z" data-part-id="logo__item--logo_0__3"></path>
+        <path fill="#4078bc" d="M337.6,761.7c0-2.5,0.1-5,0.2-7.4h-277c0,2.5-0.2,4.9-0.2,7.4c0,386.3,302,700.2,677.5,708.3v-283.5   C515.6,1178.5,337.6,991.4,337.6,761.7z" data-part-id="logo__item--logo_0__4"></path>
+      </g>
+
+    </g>
+  </g>
+</svg>

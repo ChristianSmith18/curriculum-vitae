@@ -8,7 +8,8 @@
         <li><a href="#skills" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.second-li" | translate }}</a></li>
         <li><a href="#portfolio" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.third-li" | translate }}</a>
         </li>
-        <li><a href="#">{{ "header.navbar.fourth-li" | translate }}</a></li>
+        <li><a href="#experience" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.fourth-li" | translate }}</a>
+        </li>
         <li><a href="#contact" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.fifth-li" | translate }}</a>
         </li>
         <li><a (click)="setLang()"><img [src]="'../../../assets/img/flags/'+lang+'.svg'" alt="Bandera" width="30"></a>
@@ -39,11 +40,17 @@
         <li><a href="#skills" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.second-li" | translate }}</a></li>
         <li><a href="#portfolio" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.third-li" | translate }}</a>
         </li>
-        <li><a href="#">{{ "header.navbar.fourth-li" | translate }}</a></li>
+        <li><a href="#experience" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.fourth-li" | translate }}</a>
+        </li>
         <li><a href="#contact" uk-scroll="duration: 500; offset: 80">{{ "header.navbar.fifth-li" | translate }}</a>
         </li>
       </ul>
     </div>
+
+    <span class="lang-option" (click)="setLang()">
+      {{ "header.lang" | translate }}&nbsp;&nbsp;<a><img [src]="'../../../assets/img/flags/'+lang+'.svg'" alt="Bandera"
+          width="30"></a>
+    </span>
 
   </div>
 </div>
@@ -59,17 +66,21 @@
   <p class="subtitle">{{ "header.description" | translate }}</p>
 
   <p class="buttons" uk-margin>
+    <a class="uk-button uk-button-default floating-button" href="#contact"
+      uk-scroll="duration: 500; offset: 80">{{ "header.buttons.contact.first-button" | translate }}</a>
     <button
-      class="uk-button uk-button-default floating-button">{{ "header.buttons.contact.first-button" | translate }}</button>
-    <button
-      class="uk-button uk-button-secondary floating-button">{{ "header.buttons.contact.second-button" | translate }}</button>
+      class="uk-button uk-button-secondary floating-button" (click)="downloadPDF()">{{ "header.buttons.contact.second-button" | translate }}</button>
   </p>
 
   <div class="redes-sociales">
-    <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-    <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+    <a href="https://www.facebook.com/cristian.gonzalezrossier" target="_blank"
+      class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+    <a href="https://twitter.com/Cristia12639370" target="_blank" class="uk-icon-button uk-margin-small-right"
+      uk-icon="twitter"></a>
+    <a href="https://www.instagram.com/cristian.gonzalez.rossier/" target="_blank"
+      class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+    <a href="https://www.linkedin.com/in/cristian-gonz%C3%A1lez-rossier-8847b01a7/" target="_blank"
+      class="uk-icon-button" uk-icon="linkedin"></a>
   </div>
 </div>
 

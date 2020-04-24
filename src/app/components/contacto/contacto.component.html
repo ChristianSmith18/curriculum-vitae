@@ -2,7 +2,7 @@
   <h2>{{ "contact.title" | translate }}</h2>
   <div class="contact-container" uk-parallax="bgy: -100"
     style="background-image: url(../../../assets/img/contacto/maps.png);">
-    <div class="uk-card uk-card-body uk-card-default">
+    <div class="uk-card uk-card-body uk-card-default" uk-scrollspy="cls:showFade">
       <h2 class="uk-text-center">{{ "contact.card.title" | translate }}</h2>
       <form class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
         <div>
@@ -25,7 +25,8 @@
             <div class="uk-inline">
               <span class="uk-form-icon" uk-icon="icon: receiver"></span>
               <input [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" class="uk-input uk-form-width-large"
-                type="text" placeholder="{{ 'contact.card.placeholder.first' | translate }}" tabindex="3" maxlength="15">
+                type="text" placeholder="{{ 'contact.card.placeholder.third' | translate }}" tabindex="3"
+                maxlength="15">
             </div>
           </div>
         </div>
@@ -40,11 +41,12 @@
           </div>
           <div class="uk-margin">
             <textarea [(ngModel)]="msg" [ngModelOptions]="{standalone: true}" class="uk-textarea"
-              placeholder="{{ 'contact.card.placeholder.fourth' | translate }}" tabindex="5" style="resize: none; height: 100px;"></textarea>
+              placeholder="{{ 'contact.card.placeholder.fourth' | translate }}" tabindex="5"
+              style="resize: none; height: 100px;"></textarea>
           </div>
         </div>
       </form>
-      <button id="button-submit" class="uk-button uk-button-secondary" style="margin-top: 20px;" (click)="sendData()">
+      <button id="button-submit" class="uk-button uk-button-secondary" style="margin-top: 20px;" (click)="sendData()" tabindex="5">
         <span *ngIf="!loadingSvg">{{ "contact.card.button" | translate }}</span>
         <span *ngIf="loadingSvg">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

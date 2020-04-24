@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import * as FileSaver from 'file-saver';
 
 @Component({
   selector: 'app-header',
@@ -37,5 +38,11 @@ export class HeaderComponent {
     }
     localStorage.setItem('asmh', this.lang);
     this.translate.use(this.lang);
+  }
+
+  downloadPDF() {
+    const url = '../../../assets/pdf/curriculum-vitae.pdf';
+    const pdfName = 'cristian_gonzalez_CV';
+    FileSaver.saveAs(url, pdfName);
   }
 }

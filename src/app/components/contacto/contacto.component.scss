@@ -2,6 +2,11 @@ h2 {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.showFade {
+  animation: fade .2s ease-in-out both;
+  animation-delay: .2s;
+}
+
 .contacto-bg {
   width: 100%;
   text-align: center;
@@ -24,5 +29,49 @@ h2 {
       border-top-right-radius: 1.2rem;
       border-bottom-left-radius: 1.2rem;
     }
+  }
+
+  @media (max-width: 375px) {
+    .contact-container {
+      height: 90vh;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .contact-container {
+      height: 100vh;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .contact-container {
+      height: 112vh;
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 1;
   }
 }
