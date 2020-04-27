@@ -1,0 +1,20 @@
+<div class="not-found-container">
+  <div class="bg-n-f">
+    <div class="title-n-f">
+      <span class="four">4</span>
+      <span class="zeroji">
+        <img src="../../../assets/img/page-not-found/sad.svg" alt="Emoji triste">
+      </span>
+      <span class="four">4</span>
+    </div>
+    <h1 class="title-n-f">{{ "not-found.title" | translate }}</h1>
+    <div class="text-n-f">
+      <p>{{ "not-found.description" | translate }}</p>
+    </div>
+    <div class="button-n-f">
+      <button class="uk-button uk-button-secondary floating-button" (click)="redirectHome()">
+        <i class="fas fa-home"></i>&nbsp;&nbsp;{{ "not-found.button" | translate }}
+      </button>
+    </div>
+  </div>
+</div>

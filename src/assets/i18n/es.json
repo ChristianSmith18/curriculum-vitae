@@ -120,5 +120,10 @@
   },
   "footer": {
     "social-networks": "Redes Sociales"
+  },
+  "not-found": {
+    "title": "UPS! PÁGINA NO ENCONTRADA",
+    "description": "Lo sentimos, pero la página que busca no existe, se ha eliminado, ha cambiado el nombre o no está disponible temporalmente.",
+    "button": "Volver al inicio"
   }
 }

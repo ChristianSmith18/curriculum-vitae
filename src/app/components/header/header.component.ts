@@ -1,6 +1,8 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import * as FileSaver from 'file-saver';
+import { Title } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -20,12 +22,24 @@ export class HeaderComponent {
     }
   }
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private title: Title,
+    @Inject(DOCUMENT) private document: Document
+  ) {
     const language = localStorage.getItem('asmh');
     if (language === null || language === undefined) {
       localStorage.setItem('asmh', 'es');
     } else {
       this.lang = language;
+    }
+
+    if (this.lang === 'es') {
+      this.title.setTitle('Cristian González CV');
+      this.document.documentElement.lang = 'es-CL';
+    } else {
+      this.title.setTitle('Cristian González - Resume!');
+      this.document.documentElement.lang = 'en';
     }
     this.translate.setDefaultLang(this.lang);
   }

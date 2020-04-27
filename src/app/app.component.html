@@ -1,19 +1,5 @@
-<ng-container (window:scroll)="showUpButton($event)">
-  <app-header></app-header>
-
-  <card-info></card-info>
-
-  <habilidades></habilidades>
-
-  <portafolio></portafolio>
-
-  <experiencia></experiencia>
-
-  <contacto></contacto>
-
-  <app-footer></app-footer>
-</ng-container>
-
 <a id="button-up" href="#" class="uk-icon-button uk-animation-scale-up" uk-scroll="duration: 700">
   <i class="fas fa-chevron-up"></i>
 </a>
+
+<router-outlet></router-outlet>
