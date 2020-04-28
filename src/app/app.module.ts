@@ -22,6 +22,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app-routing.module';
 
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +51,7 @@ import { routes } from './app-routing.module';
       },
     }),
     RouterModule.forRoot(routes),
+    NgxJsonLdModule,
   ],
   providers: [ContactService],
   bootstrap: [AppComponent],
