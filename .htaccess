@@ -1,0 +1,27 @@
+# ===== CACHÉ DE NAVEGADOR
+<IfModule mod_expires.c>
+# Activamos el módulo
+ExpiresActive On
+
+# Caducidad para las imágenes
+ExpiresByType image/jpg “access 1 year”
+ExpiresByType image/jpeg “access 1 year”
+ExpiresByType image/gif “access 1 year”
+ExpiresByType image/png “access 1 year”
+ExpiresByType image/x-icon “access 1 year”
+
+# Caducidad para las hojas de estilos (CSS’s)
+ExpiresByType text/css “access 1 month”
+
+# Caducidad para los Javascripts (JS’s)
+ExpiresByType application/javascript “access 1 month”
+ExpiresByType application/x-javascript “access 1 month”
+
+# Caducidad para PDF’s
+ExpiresByType application/pdf “access 1 month”
+
+# Caducidad para todo lo demás
+ExpiresDefault “access 2 days”
+
+</IfModule>
+# ===== FIN CACHÉ DE NAVEGADOR
