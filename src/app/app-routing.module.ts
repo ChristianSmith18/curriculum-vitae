@@ -8,7 +8,10 @@ export const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
-  { path: '**', component: NotFoundComponent },
+  {
+    path: '**',
+    component: NotFoundComponent,
+  },
 ];
 
 @NgModule({

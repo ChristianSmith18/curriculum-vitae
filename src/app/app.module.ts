@@ -23,6 +23,8 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app-routing.module';
 
 import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,7 @@ import { NgxJsonLdModule } from '@ngx-lite/json-ld';
     }),
     RouterModule.forRoot(routes),
     NgxJsonLdModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [ContactService],
   bootstrap: [AppComponent],
