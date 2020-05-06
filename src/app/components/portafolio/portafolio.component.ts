@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as platform from 'platform';
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./portafolio.component.scss'],
 })
 export class PortafolioComponent {
+  imgType = platform.manufacturer === 'Apple' ? 'png' : 'webp';
   constructor() {}
 
   changeUrl(url: string) {

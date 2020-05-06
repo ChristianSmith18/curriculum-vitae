@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import Swal from 'sweetalert2';
 import { ContactService } from 'src/app/services/contact.service';
+import * as platform from 'platform';
 
 @Component({
-  selector: "contacto",
+  selector: 'contacto',
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss'],
 })
@@ -12,6 +13,7 @@ export class ContactoComponent {
   name = '';
   phone = '';
   msg = '';
+  imgType = platform.manufacturer === 'Apple' ? 'png' : 'webp';
   loadingSvg = false;
   constructor(private http: ContactService) {}
 

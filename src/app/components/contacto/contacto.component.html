@@ -1,7 +1,7 @@
 <div id="contact" class="contacto-bg">
   <h2>{{ "contact.title" | translate }}</h2>
   <div class="contact-container" uk-parallax="bgy: -100"
-    style="background-image: url(../../../assets/img/contacto/maps.webp);">
+    [style]="'background-image: url(../../../assets/img/contacto/maps.'+imgType+');'">
     <div class="uk-card uk-card-body uk-card-default" uk-scrollspy="cls:showFade">
       <h2 class="uk-text-center">{{ "contact.card.title" | translate }}</h2>
       <form class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
@@ -46,7 +46,8 @@
           </div>
         </div>
       </form>
-      <button id="button-submit" class="uk-button uk-button-secondary" style="margin-top: 20px;" (click)="sendData()" tabindex="5">
+      <button id="button-submit" class="uk-button uk-button-secondary" style="margin-top: 20px;" (click)="sendData()"
+        tabindex="5">
         <span *ngIf="!loadingSvg">{{ "contact.card.button" | translate }}</span>
         <span *ngIf="loadingSvg">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

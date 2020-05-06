@@ -57,19 +57,19 @@
 
 <div (window:scroll)="doSomethingOnInternalScroll()" class="img-bg">
   <div class="image">
-    <img class="img-bridge" src="../../../assets/img/header/bridge-min.webp" alt="Puente">
+    <img class="img-bridge" [src]="'../../../assets/img/header/bridge-min.'+imgType" alt="Puente">
   </div>
 
   <a href="#about" uk-scroll="duration: 300; offset: 80"><img class="img-profile spin circle"
-      src="../../../assets/img/header/profile-min.webp" alt="Foto de perfil"></a>
+      [src]="'../../../assets/img/header/profile-min.'+imgType" alt="Foto de perfil"></a>
   <h1>Cristian González</h1>
   <p class="subtitle">{{ "header.description" | translate }}</p>
 
   <p class="buttons" uk-margin>
     <a class="uk-button uk-button-default floating-button" href="#contact"
       uk-scroll="duration: 500; offset: 80">{{ "header.buttons.contact.first-button" | translate }}</a>
-    <button
-      class="uk-button uk-button-secondary floating-button" (click)="downloadPDF()">{{ "header.buttons.contact.second-button" | translate }}</button>
+    <button class="uk-button uk-button-secondary floating-button"
+      (click)="downloadPDF()">{{ "header.buttons.contact.second-button" | translate }}</button>
   </p>
 
   <div class="redes-sociales">

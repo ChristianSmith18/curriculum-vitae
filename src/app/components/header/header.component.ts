@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import * as FileSaver from 'file-saver';
 import { Title } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
+import * as platform from 'platform';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,7 @@ import { DOCUMENT } from '@angular/common';
 export class HeaderComponent {
   bgColor = false;
   lang = 'es';
+  imgType = platform.manufacturer === 'Apple' ? 'jpg' : 'webp';
 
   @HostListener('scroll', [])
   doSomethingOnInternalScroll() {
