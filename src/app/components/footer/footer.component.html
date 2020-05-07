@@ -1,7 +1,11 @@
 <footer>
   <div class="uk-child-width-1-1@xs uk-child-width-1-3@s uk-child-width-1-3@m" uk-grid style="padding: 10px 0;">
     <div class="uk-text-center">
-      <img src="../../../assets/img/icono/logo-vertical.svg" alt="Logo de la página" width="70px">
+      <picture>
+        <source media="(max-width: 768px)" srcset="../../../assets/img/icono/logo-vertical.png">
+        <source media="(min-width: 769px)" srcset="../../../assets/img/icono/logo-vertical.png">
+        <img src="../../../assets/img/icono/logo-vertical.png" alt="Logo de la página" width="70px">
+      </picture>
     </div>
     <div class="uk-text-center">
       <div class="uk-text-center second-column" style="height: 0;">
@@ -15,9 +19,9 @@
       <h2 style="margin-top: 10px;">{{ "footer.social-networks" | translate }}</h2>
       <a href="https://www.facebook.com/cristian.gonzalezrossier" target="_blank" class="uk-icon-button"
         uk-icon="facebook"></a>
-      <a href="https://twitter.com/Cristia12639370" target="_blank" class="uk-icon-button"
-        uk-icon="twitter"></a>
-      <a href="https://www.instagram.com/cristian.gonzalez.rossier/" target="_blank" class="uk-icon-button" uk-icon="instagram"></a>
+      <a href="https://twitter.com/Cristia12639370" target="_blank" class="uk-icon-button" uk-icon="twitter"></a>
+      <a href="https://www.instagram.com/cristian.gonzalez.rossier/" target="_blank" class="uk-icon-button"
+        uk-icon="instagram"></a>
       <a href="https://www.linkedin.com/in/cristian-gonz%C3%A1lez-rossier-8847b01a7/" target="_blank"
         class="uk-icon-button" uk-icon="linkedin"></a>
     </div>
